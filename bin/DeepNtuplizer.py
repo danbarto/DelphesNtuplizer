@@ -152,7 +152,7 @@ def main():
                     treeProducer.pfcand_eta     [j] = p4.Eta()
                     if debug: print '       PFCandidate: ',const.PID, p4.Pt(), p4.Eta(), p4.Phi(), p4.M()
 
-            treeProducer.pfcand_size[0] = j
+            treeProducer.pfcand_size[0] = j+1
 
             ## fill tree 
             treeProducer.fill()
